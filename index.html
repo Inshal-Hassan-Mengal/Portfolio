@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inshal</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Unbounded:wght@200..900&amp;display=swap"
+        rel="stylesheet">
+
+
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css" href="css/colorswitcher.css">
+
+    <link id="dynamic-theme" rel="stylesheet" href="css/skins/mustard-gold.css">
+</head>
+
+<body class="dark">
+
+
+    <main class="chat-wrapper" id="chat-wrapper">
+        <section class="chat-container" id="chat-container">
+            <div class="chat-area-content">
+                <!-- Intro Screen Starts -->
+                <div id="intro-screen" class="intro-screen">
+                    <div class="intro-content">
+                        <!-- Hello Text -->
+                        <div class="hello">
+                            <span>
+                                Hello!
+                            </span>
+                        </div>
+                        <!-- Intro Texts -->
+                        <div class="intro-text">
+                            <h1>
+                                I'm <span>Inshal</span>
+                            </h1>
+                            <h2>
+                                Mern Stack developer
+                            </h2>
+                        </div>
+                        <!-- Intro Bottom Content -->
+                        <div class="intro-bottom-content">
+                            <!-- Quote -->
+                            <div class="quote">
+                                <p>
+                                    Success is not final, failure is not fatal: it is the courage to continue that
+                                    counts
+                                </p>
+                                <span>
+                                    — Winston Churchill
+                                </span>
+                            </div>
+                            <!-- Photo -->
+                            <div class="image-container">
+                                <img id="intro-image" src="/boy-developer-or-software-engineer-mascot-cartoon-character-template-vector-removebg-preview.png" alt="Inshal"
+                                    class="intro-image">
+                            </div>
+                            <!-- Call To Actions -->
+                            <div id="intro-options-target" class="intro-options">
+                                <button class="btn btn-primary" data-action="about">
+                                    <span class="button-content">
+                                        <span>More About Me</span>
+                                    </span>
+                                </button>
+                                <button class="btn btn-primary btn-secondary" data-action="portfolio">
+                                    <span class="button-content">
+                                        <span>See My Work</span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Intro Screen Ends -->
+
+                <!-- Chat Window Starts -->
+                <div id="chat-window" class="chat-window">
+                    <img src="/boy-developer-or-software-engineer-mascot-cartoon-character-template-vector-removebg-preview.png" id="chat-avatar" class="chat-avatar-image" alt="David johnsoc">
+                </div>
+                <!-- Chat Window Ends -->
+
+                <!-- Chat Input Starts -->
+                <footer id="chat-footer" class="chat-footer">
+                    <div id="input-nav-wrapper" class="input-nav-wrapper">
+                        <!-- Chat Form -->
+                        <div class="input-area-visual">
+                            <button class="btn-menu-toggle" id="btn-menu-toggle"><i
+                                    class="fa-solid fa-plus"></i></button>
+                            <input type="text" id="chat-input" placeholder="Try about, skills, or projects...">
+                            <button class="send-btn" id="send-button" disabled><i
+                                    class="fa-solid fa-arrow-up"></i></button>
+                        </div>
+                        <!-- Footer Navigation -->
+                        <div id="primary-nav" class="primary-nav">
+                            <div class="nav-links-container">
+                                <button class="btn btn-primary-nav" data-flow="about"><i
+                                        class="fa-solid fa-file-lines"></i>About Me</button>
+                                <button class="btn btn-primary-nav" data-flow="skills"><i
+                                        class="fa-solid fa-gear"></i>Skills</button>
+                                <button class="btn btn-primary-nav" data-flow="projects"><i
+                                        class="fa-solid fa-layer-group"></i>Projects</button>
+                                <button class="btn btn-primary-nav" data-flow="contact"><i
+                                        class="fa-solid fa-envelope"></i>Contact</button>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- Chat Input Ends -->
+            </div>
+        </section>
+    </main>
+    <!-- Chat Wrapper Ends -->
+
+    <!-- Sections Starts -->
+    <div class="sections">
+
+        <!-- About Section Starts -->
+        <div id="flow-about" class="generic-flow" data-flow-id="about"
+            data-triggers="about, about me, about you, who are you, profile, bio, biography, introduction, who, you, me">
+            <p>I'm a MERN Stack Developer passionate about building modern, scalable, and high-performance web
+                applications. <strong>I create seamless digital experiences by combining clean frontend design with
+                    powerful</strong> backend solutions.</p>
+            <div class="list-with-icons">
+                <span><i class="fa-regular fa-star"></i>2+ Years in Web Development</span>
+                <span><i class="fa-solid fa-code"></i>20+ Completed Projects</span>
+                <span><i class="fa-regular fa-calendar-check"></i>Available for Freelance</span>
+                <span><i class="fa-regular fa-map"></i>Based in Pakistan, Quetta</span>
+            </div>
+            <ul class="options">
+                <li data-action="skills">View My Skills</li>
+                <li data-action="projects" data-class="btn-secondary">View My Projects</li>
+            </ul>
+        </div>
+        <!-- About Section Ends -->
+
+        <!-- Skills Section Starts -->
+        <div id="flow-skills" class="generic-flow" data-flow-id="skills"
+            data-triggers="skills, technologies, stack, tech, tools, what can you do, capabilities, show me your skills, services, what are you good at">
+            <p>Here are the tools and technologies I use daily to build reliable, modern interfaces with a strong focus
+                on <strong>quality and performance.</strong></p>
+            <h2 class="category-skills"><i class="fa-solid fa-laptop"></i>Frontend</h2>
+            <ul class="list-skills">
+                <li>React<span class="stars" data-rating="4"></span></li>
+                <li>Next js<span class="stars" data-rating="3"></span></li>
+                <li>Javascript<span class="stars" data-rating="4"></span></li>
+                <li>Tailwind css<span class="stars" data-rating="5"></span></li>
+                <li>Typescript<span class="stars" data-rating="5"></span></li>
+            </ul>
+            <h2 class="category-skills"><i class="fa-solid fa-database"></i>Backend</h2>
+            <ul class="list-skills">
+                <li>Node.js<span class="stars" data-rating="5"></span></li>
+                <li>Python<span class="stars" data-rating="4"></span></li>
+                <li>MongoDB<span class="stars" data-rating="5"></span></li>
+                <li>PostgreSQL<span class="stars" data-rating="4"></span></li>
+                <li>Supabase<span class="stars" data-rating="5"></span></li>
+                <li>Firebase<span class="stars" data-rating="4"></span></li>
+            </ul>
+            <ul class="options">
+                <li data-action="projects">View My Projects</li>
+            </ul>
+        </div>
+        <!-- Skills Section Ends -->
+
+        <!-- Projects Section Starts -->
+        <div id="flow-projects"
+            data-triggers="projects, portfolio, work, examples, case studies, show me, builds, apps, websites, creations, show me your work">
+            <p class="intro">Ready to view my recent work? I'll walk you through my projects one at a time. Click
+                <strong>Show Next Project</strong> below to keep going.</p>
+
+            <div class="projects-data">
+
+                <div class="project-item" data-title="Chess-App" data-link="https://chess-beta-navy.vercel.app/"
+                    data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxL2qA4rHSYyyeGfemPeoLT1jvSVlATWhXTMkIw43iww&s=10"
+                    data-media="Chess">
+                    <p class="summary">A modern Chess application developed using React, delivering a smooth gameplay
+                        experience with real-time move validation, intuitive controls, and a responsive, user-friendly
+                        design.</p>
+                    <div class="gallery-urls">
+                        <img src="/Screenshot 2026-07-28 165452.png" alt="">
+                    </div>
+                </div>
+
+                <div class="project-item" data-title="Currency converter"
+                    data-link="https://currency-converter-xi-sandy.vercel.app"
+                    data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy0kazMV_0YTj2eOK1t8cnekq6xjF4QzRZh5T70G9fMYTY4SmZ22w8mb8&s=10"
+                    data-media="Currency converter" data-youtube-id="SjJhuZQlkbA">
+                    <p class="summary">A responsive Currency Converter built with React, providing real-time exchange
+                        rate conversion through API integration with a clean and intuitive user interface.</p>
+                </div>
+
+                <div class="project-item" data-title="Expense Manage app"
+                    data-link="https://expense-manage-tawny.vercel.app"
+                    data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXsENVygsbEeXtdPU-Zyvz_FbTWd4I19kBABXIkE_XqQ&s=10"
+                    data-media="Expense Manage app" data-youtube-id="SjJhuZQlkbA">
+                    <p class="summary">A modern React-based Currency Converter featuring live exchange rates and instant
+                        currency conversion.</p>
+                </div>
+
+                <div class="project-item" data-title="Lucky-Number-App" data-link="https://luck-number-l5zz.vercel.app/"
+                    data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo8kpx2MfL2JuKZ1bD3s0h_F2S_ReOkCdb_-KmZ71GLGKNTuBW1j9oxiOf&s=10"
+                    data-media="Lucky">
+                    <p class="summary">A Lucky Number application built with React and Supabase, featuring secure
+                        authentication, real-time data management, and a clean, responsive interface.</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- Projects Section Ends -->
+
+        <!-- Clients Section Starts -->
+        <div id="flow-clients" data-triggers="clients, brands, partners, customers, collaborations">
+            <ul class="options">
+                <li data-action="contact">Contact Me</li>
+            </ul>
+        </div>
+        <!-- Clients Section Ends -->
+
+        <!-- Contact Section Starts -->
+        <div id="flow-contact" data-triggers="contact, touch, reach, message, hire, email, message, reach, call">
+            <p class="intro">Ready to turn your ideas into reality. Whether it's <strong>a new project, collaboration,</strong> or opportunity, let's connect and build something remarkable.</p>
+            <div class="direct-contact">
+                <div class="contact-row" data-label="Email :" data-icon="fa-regular fa-envelope-open">Inshalh221@gmail.com
+                </div>
+                <div class="contact-row" data-label="Phone :" data-icon="fa-brands fa-whatsapp">+92 371-3930527</div>
+            </div>
+            <div class="social-links">
+                <div class="social-item" data-icon="fa-brands fa-linkedin-in" data-url="https://www.linkedin.com/in/inshal-hassan/"
+                    data-class="linkedin"></div>
+                <div class="social-item" data-icon="fa-brands fa-github" data-url="https://github.com/Inshal-Hassan-Mengal"
+                    data-class="github"></div>
+            </div>
+            <ul class="options">
+                <li data-action="open_contact_form">Send Me a Message</li>
+                <li data-action="projects" data-class="btn-secondary">View Projects</li>
+            </ul>
+        </div>
+        <!-- Contact Section Ends -->
+
+        <!-- Success Message Starts -->
+        <div class="generic-flow" data-flow-id="msg_success">
+            <p><strong>Your message was sent successfully!</strong></p>
+            <p>Rest assured, I'll be in touch with a proper response within 24 hours.</p>
+            <ul class="options">
+                <li data-action="projects">View My Projects</li>
+                <li data-action="hobbies" data-class="btn-secondary">See my Hobbies</li>
+            </ul>
+        </div>
+        <!-- Success Message Ends -->
+
+        <!-- Greeting Section Starts -->
+        <div class="generic-flow" data-flow-id="hello" data-triggers="hi, hello, hey, greeting, yo">
+            <p>Hi there I'm <strong>Inshal Hassan</strong></p>
+            <p>Please use the following commands to learn more about my journey :</p>
+            <p><strong>about</strong>, <strong>skills</strong>, <strong>projects</strong>,
+                <strong>contact</strong>.</p>
+        </div>
+        <!-- Greeting Section Ends -->
+
+        <!-- Hobbies Section Starts -->
+        <div id="flow-hobbies" class="generic-flow" data-flow-id="hobbies"
+            data-triggers="hobbies, interests, fun, life, leisure">
+            <p>Beyond coding, I like to keep my mind and body active with these activities:</p>
+            <div class="list-with-icons">
+                <span><i class="fas fa-camera"></i> <strong>Book Reading</strong> — I genuinely enjoy book reading.</span>
+                <span><i class="fas fa-plane"></i> <strong>Traveling</strong> — Exploring new cultures and
+                    cuisines.</span>
+                <span><i class="fas fa-dumbbell"></i> <strong>Fitness</strong> — Hitting the gym to stay
+                    energized.</span>
+                <span><i class="fas fa-headphones"></i> <strong>Music</strong> — Lo-fi beats while coding and rock for
+                    the road.</span>
+                <span><i class="fas fa-futbol"></i> <strong>Football</strong> — Playing in local leagues and following
+                    the beautiful game.</span>
+            </div>
+            <p>Do you share any of these interests?</p>
+            <ul class="options">
+                <li data-action="contact">Let's Connect</li>
+                <li data-action="about" data-class="btn-secondary">More About Me</li>
+            </ul>
+        </div>
+        <!-- Hobbies Section Ends -->
+
+        <!-- Age Section Starts -->
+        <div class="generic-flow" data-flow-id="age"
+            data-triggers="age, old, how old are you, your age, born, birthdate, born">
+            <p>I was born on August 22, 2008 in Quetta, Pakistan. I am currently <strong>18 years old</strong> and based in
+                Quetta.</p>
+            <ul class="options">
+                <li data-action="about">More About Me</li>
+            </ul>
+        </div>
+        <!-- Age Section Ends -->
+
+        <!-- Awards Section Starts -->
+        <div class="generic-flow" data-flow-id="awards"
+            data-triggers="awards, certificates, courses, training, certifications">
+            <p>I am committed to <strong>continuous learning</strong> and staying updated with industry standards.</p>
+        </div>
+        <!-- Awards Section Ends -->
+
+        <!-- Error Message Starts -->
+        <div class="generic-flow" data-flow-id="error">
+            <p>I'm sorry, I didn't quite catch that. Try one of these commands:</p>
+            <p><strong>about</strong>, <strong>skills</strong>, <strong>projects</strong>, <strong>clients</strong>,
+                <strong>contact</strong>.</p>
+        </div>
+        <!-- Error Message Ends -->
+
+    </div>
+    <!-- Sections Ends -->
+
+    <!-- Vertical Texts Starts -->
+    <div class="vertical-texts-container">
+        <span class="vertical-text vertical-text-left">Inshal Hassan</span>
+        <span class="vertical-text vertical-text-right">Web Developer</span>
+    </div>
+    <!-- Vertical Texts Ends -->
+
+    <!-- Page Preloader Starts -->
+    <div id="preloader" class="preloader">
+        <div class="line"></div>
+    </div>
+    <!-- Page Preloader Ends -->
+
+    <!-- Light/Dark Switcher Starts -->
+    <div class="skin">
+        <input checked type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="checkbox-label">
+            <svg class="sun" width="20px" height="20px" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg" color="#000000">
+                <path
+                    d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z"
+                    stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M22 12L23 12" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                <path d="M12 2V1" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                </path>
+                <path d="M12 23V22" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                </path>
+                <path d="M20 20L19 19" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                <path d="M20 4L19 5" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                </path>
+                <path d="M4 20L5 19" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                </path>
+                <path d="M4 4L5 5" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                </path>
+                <path d="M1 12L2 12" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                </path>
+            </svg>
+            <svg class="moon" width="20px" height="20px" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg" color="#000000">
+                <path
+                    d="M3 11.5066C3 16.7497 7.25034 21 12.4934 21C16.2209 21 19.4466 18.8518 21 15.7259C12.4934 15.7259 8.27411 11.5066 8.27411 3C5.14821 4.55344 3 7.77915 3 11.5066Z"
+                    stroke="#f1f5f9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+        </label>
+    </div>
+    <!-- Light/Dark Switcher Ends -->
+
+    <!-- Modal Starts -->
+    <div id="master-modal" class="modal-overlay">
+        <div class="modal-container">
+            <span class="modal-close" onclick="closeMasterModal()">&times;</span>
+            <div id="modal-content-area" class="modal-content-area"></div>
+        </div>
+    </div>
+    <!-- Modal Ends -->
+
+    <!-- Color Switcher Starts / Only Demo -->
+    <div id="theme-switcher" class="theme-panel opacity-0">
+        <button id="theme-toggle-btn" title="Change Theme">
+            <i class="fa-solid fa-gears"></i>
+        </button>
+
+        <div class="theme-options">
+            <p>Select Skin</p>
+            <div class="theme-grid">
+                <img class="skin-btn" data-file="multicolors.css" src="img/styleswitcher/multicolors.png"
+                    alt="Multicolors 1">
+                <img class="skin-btn" data-file="multicolors2.css" src="img/styleswitcher/multicolors2.png"
+                    alt="Multicolors 2">
+                <button class="skin-btn apricot-rouge" data-file="apricot-rouge.html"></button>
+                <button class="skin-btn exotic-teal" data-file="exotic-teal.html"></button>
+                <button class="skin-btn funky-red" data-file="funky-red.html"></button>
+                <button class="skin-btn lucky-green" data-file="lucky-green.html"></button>
+                <button class="skin-btn mustard-gold" data-file="mustard-gold.html"></button>
+                <button class="skin-btn royal-blue" data-file="royal-blue.html"></button>
+                <button class="skin-btn spring-sky" data-file="spring-sky.html"></button>
+                <button class="skin-btn strong-pink" data-file="strong-pink.html"></button>
+                <button class="skin-btn super-orange" data-file="super-orange.html"></button>
+                <button class="skin-btn violet-punk" data-file="violet-punk.html"></button>
+                <img class="skin-btn skin-btn-light" data-file="monochrome.css"
+                    src="img/styleswitcher/monochrome-light.png" alt="">
+                <img class="skin-btn skin-btn-dark" data-file="monochrome.css"
+                    src="img/styleswitcher/monochrome-dark.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Color Switcher Ends / Only Demo -->
+
+    <!-- Template JS Files -->
+    <script src="js/typewriter.js"></script>
+    <script src="js/app.js"></script>
+
+    <!-- Color Switcher JS File / Only Demo -->
+    <script src="js/colorswitcher.js"></script>
+
+</body>
+
+
+</html>
